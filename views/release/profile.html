@@ -1,0 +1,328 @@
+<!-- Page Header Start -->
+<div class="page-header" style="background: url(/static/img/banner1.jpg);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumb-wrapper">
+                    <h2 class="page-title">My Profile {{.data.Firstname}}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+
+<!-- Start Content -->
+<div id="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 page-sideabr">
+                <aside>
+                    <div class="inner-box">
+                        <div class="user-panel-sidebar">
+
+                            <div class="collapse-box">
+                                <h5 class="collapset-title">My Quotes <a aria-expanded="true" class="pull-right" data-toggle="collapse" href="#myads"><i class="fa fa-angle-down"></i></a></h5>
+                                <div aria-expanded="true" id="myads" class="panel-collapse collapse in">
+                                    <ul class="acc-list">
+                                        <li>
+                                            <a href="account-myads.html"><i class="fa fa-credit-card"></i> My Quote Requests <span class="badge">44</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="account-favourite-ads.html"><i class="fa fa-heart-o"></i> Lifestyle Quotes <span class="badge">19</span></a>
+                                        </li>
+
+                                        <li>
+                                            <a href="account-archived-ads.html"><i class="fa fa-folder-o"></i> Archived Requests <span class="badge">49</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="account-pending-approval-ads.html"><i class="fa fa-hourglass-o"></i> Approved Quotes <span class="badge">33</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="collapse-box">
+                                <h5 class="collapset-title">Security <a aria-expanded="true" class="pull-right" data-toggle="collapse" href="#close"><i class="fa fa-angle-down"></i></a></h5>
+                                <div aria-expanded="true" id="close" class="panel-collapse collapse in">
+                                    <ul class="acc-list">
+                                        <li>
+                                            <a href="/profile_access"><i class="fa fa-close"></i> Who did I share with?</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="collapse-box">
+                                <h5 class="collapset-title">Close Account <a aria-expanded="true" class="pull-right" data-toggle="collapse" href="#close"><i class="fa fa-angle-down"></i></a></h5>
+                                <div aria-expanded="true" id="close" class="panel-collapse collapse in">
+                                    <ul class="acc-list">
+                                        <li>
+                                            <a href="/profile_close"><i class="fa fa-close"></i> Close Account</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner-box hidden-xs">
+                        <div class="widget-title">
+                            <h4>Advertisement</h4>
+                        </div>
+                        <img src="/static/img/placeholder200x276.gif" alt="">
+                    </div>
+                </aside>
+            </div>
+            <div class="col-sm-9 page-content">
+                <div class="inner-box">
+                    <div class="welcome-msg">
+                        <h3 class="page-sub-header2 clearfix no-padding">Hello {{.data.Firstname}} {{.data.Surname}} </h3>
+                        <span class="page-sub-header-sub small">You last logged in at: 05-01-2017 12:40 AM [AUS time (GMT + 10:00hrs)]</span>
+                    </div>
+                    <!--Accordion with icons -->
+                    <div class="panel-group pmd-accordion" id="accordion3" role="tablist" aria-multiselectable="true">
+                        <div class="panel ">
+                            <div class="panel-heading " role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion3" href="#collapseOne3" aria-expanded="true" aria-controls="collapseOne3" data-expandable="false"><i class="material-icons pmd-sm pmd-accordion-icon-left">mood</i> Your Profile <i class="material-icons md-dark pmd-sm pmd-accordion-arrow">keyboard_arrow_down</i></a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne3" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                                        <label for="regular1" class="control-label">
+                                        Salutation
+                                    </label>
+                                        <input type="text" id="Title" class="form-control" value="{{.data.Title}}">
+                                        <p class="help-block"> Help text </p>
+                                    </div>
+                                    <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                                        <label for="Firstname" class="control-label">
+                                        Firstname
+                                    </label>
+                                        <input id="Firstname" class="form-control" type="text" value="{{.data.Firstname}}">
+                                    </div>
+                                    <!-- Password Input -->
+                                    <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                                        <label for="surname" class="control-label">
+                                        Surname
+                                    </label>
+                                        <input id="Surname" class="form-control" type="text" value="{{.data.Surname}}">
+                                    </div>
+                                    <!--Default date and time picker -->
+                                    <div class="form-group pmd-textfield pmd-textfield-floating-label pmd-textfield-floating-label-completed">
+                                        <label class="control-label" for="Birthdate">Date Of Birth</label>
+                                        <input type="text" id="datetimepicker-default" class="form-control" value="{{.data.Birthdate}}" id="Birthdate" />
+                                    </div>
+
+                                    <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                                        <label for="Email1" class="control-label">
+                                        Email
+                                    </label>
+                                        <input id="Address1" class="form-control" type="email" value="{{.data.Email1}}">
+                                    </div>
+                                    <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                                        <label for="Address1" class="control-label">
+                                        Street Address
+                                    </label>
+                                        <input id="Address1" class="form-control" type="text" value="{{.data.Address1}}">
+                                    </div>
+                                    <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                                        <label for="Suburb" class="control-label">
+                                        Suburb
+                                    </label>
+                                        <input id="Suburb" class="form-control" type="text" value="{{.data.Suburb}}">
+                                    </div>
+                                    <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                                        <label for="PostCode" class="control-label">
+                                        PostCode
+                                    </label>
+                                        <input id="PostCode" class="form-control" type="text" value="{{.data.Postcode}}">
+                                    </div>
+                                    <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                                        <label for="PhoneHome" class="control-label">
+                                        Home Phone
+                                    </label>
+                                        <input id="PhoneHome" class="form-control" type="text" value="{{.data.PhoneHome}}">
+                                    </div>
+                                    <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                                        <label for="PhoneMob" class="control-label">
+                                        Mobile Phone
+                                    </label>
+                                        <input id="PhoneMob" class="form-control" type="text" value="{{.data.PhoneMob}}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion3" href="#collapseTwo3" aria-expanded="false" aria-controls="collapseTwo3" data-expandable="false"><i class="material-icons pmd-sm pmd-accordion-icon-left">account_balance</i> Life Insurance <i class="material-icons md-dark pmd-sm pmd-accordion-arrow">keyboard_arrow_down</i></a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                                        <label for="CountryResidence" class="control-label">
+                                        Country Of Residence
+                                    </label>
+                                        <input id="CountryResidence" class="form-control" type="text" value="{{.life.CountryResidence}}">
+                                    </div>
+                                    <div class="checkbox pmd-default-theme">
+                                        <label class="pmd-checkbox pmd-checkbox-ripple-effect">
+                                                <input type="checkbox" value="" {{.life.Smoker | setchecked}}>
+                                                <span>Have you smoked tobacco or any substance in the last 12 months?</span>
+                                            </label>
+                                    </div>
+                                    <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                                        <label for="CountryResidence" class="control-label">
+                                       If you used to smoke, how many years ago did you give up?
+                                    </label>
+                                        <input id="LastSmoked" class="form-control" type="number" value="{{.life.LastSmoked}}">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="panel">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion3" href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3" data-expandable="false"><i class="material-icons pmd-sm pmd-accordion-icon-left">account_balance</i> Health Insurance <i class="material-icons md-dark pmd-sm pmd-accordion-arrow">keyboard_arrow_down</i></a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                                        <label for="CountryResidence" class="control-label">
+                                        Country Of Residence
+                                    </label>
+                                        <input id="CountryResidence" class="form-control" type="text" value="{{.life.CountryResidence}}">
+                                    </div>
+                                    <div class="checkbox pmd-default-theme">
+                                        <label class="pmd-checkbox pmd-checkbox-ripple-effect">
+                                                <input type="checkbox" value="" {{.life.Smoker | setchecked}}>
+                                                <span>Have you smoked tobacco or any substance in the last 12 months?</span>
+                                            </label>
+                                    </div>
+                                    <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                                        <label for="CountryResidence" class="control-label">
+                                       If you used to smoke, how many years ago did you give up?
+                                    </label>
+                                        <input id="LastSmoked" class="form-control" type="number" value="{{.life.LastSmoked}}">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="panel">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion3" href="#collapseFour4" aria-expanded="false" aria-controls="collapseFour4" data-expandable="false"><i class="material-icons pmd-sm pmd-accordion-icon-left">account_balance</i> Funeral Insurance <i class="material-icons md-dark pmd-sm pmd-accordion-arrow">keyboard_arrow_down</i></a>
+                                </h4>
+                            </div>
+                            <div id="collapseFour4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                                        <label for="CountryResidence" class="control-label">
+                                        Country Of Residence
+                                    </label>
+                                        <input id="CountryResidence" class="form-control" type="text" value="{{.life.CountryResidence}}">
+                                    </div>
+                                    <div class="checkbox pmd-default-theme">
+                                        <label class="pmd-checkbox pmd-checkbox-ripple-effect">
+                                                <input type="checkbox" value="" {{.life.Smoker | setchecked}}>
+                                                <span>Have you smoked tobacco or any substance in the last 12 months?</span>
+                                            </label>
+                                    </div>
+                                    <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                                        <label for="CountryResidence" class="control-label">
+                                       If you used to smoke, how many years ago did you give up?
+                                    </label>
+                                        <input id="LastSmoked" class="form-control" type="number" value="{{.life.LastSmoked}}">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="panel">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion3" href="#collapseFive5" aria-expanded="false" aria-controls="collapseFive5" data-expandable="false"><i class="material-icons pmd-sm pmd-accordion-icon-left">account_balance</i> Home Insurance <i class="material-icons md-dark pmd-sm pmd-accordion-arrow">keyboard_arrow_down</i></a>
+                                </h4>
+                            </div>
+                            <div id="collapseFive5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                                        <label for="CountryResidence" class="control-label">
+                                        Country Of Residence
+                                    </label>
+                                        <input id="CountryResidence" class="form-control" type="text" value="{{.life.CountryResidence}}">
+                                    </div>
+                                    <div class="checkbox pmd-default-theme">
+                                        <label class="pmd-checkbox pmd-checkbox-ripple-effect">
+                                                <input type="checkbox" value="" {{.life.Smoker | setchecked}}>
+                                                <span>Have you smoked tobacco or any substance in the last 12 months?</span>
+                                            </label>
+                                    </div>
+                                    <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                                        <label for="CountryResidence" class="control-label">
+                                       If you used to smoke, how many years ago did you give up?
+                                    </label>
+                                        <input id="LastSmoked" class="form-control" type="number" value="{{.life.LastSmoked}}">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="panel">
+                            <div class="panel-heading" role="tab" id="headingSix">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion3" href="#headingSix6" aria-expanded="false" aria-controls="headingSix6" data-expandable="false"><i class="material-icons pmd-sm pmd-accordion-icon-left">account_balance</i> Pet Insurance <i class="material-icons md-dark pmd-sm pmd-accordion-arrow">keyboard_arrow_down</i></a>
+                                </h4>
+                            </div>
+                            <div id="headingSix6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                                        <label for="CountryResidence" class="control-label">
+                                        Country Of Residence
+                                    </label>
+                                        <input id="CountryResidence" class="form-control" type="text" value="{{.life.CountryResidence}}">
+                                    </div>
+                                    <div class="checkbox pmd-default-theme">
+                                        <label class="pmd-checkbox pmd-checkbox-ripple-effect">
+                                                <input type="checkbox" value="" {{.life.Smoker | setchecked}}>
+                                                <span>Have you smoked tobacco or any substance in the last 12 months?</span>
+                                            </label>
+                                    </div>
+                                    <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                                        <label for="CountryResidence" class="control-label">
+                                       If you used to smoke, how many years ago did you give up?
+                                    </label>
+                                        <input id="LastSmoked" class="form-control" type="number" value="{{.life.LastSmoked}}">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="form-group ">
+                    <button type="submit " class="btn btn-common ">Update</button>
+                </div>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+</div>
+</div>
+<!-- End Content -->

@@ -1,0 +1,1253 @@
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+<!-- CSS reset -->
+<link rel="stylesheet" href="/static/css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/css/default.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/component.css" />
+<link rel="stylesheet" href="/static/css/cartstyle.css">
+
+
+
+
+<!-- Resource style -->
+
+<!-- Modernizr -->
+
+
+<div class="cd-cart-container empty">
+    <a href="#0" class="cd-cart-trigger">
+		Cart
+		<ul class="count"> <!-- cart items count -->
+			<li>0</li>
+			<li>0</li>
+		</ul> <!-- .count -->
+	</a>
+
+    <div class="cd-cart">
+        <div class="wrapper">
+            <header>
+                <h2>Quote Cart</h2>
+                <span class="undo">Quote removed. <a href="#0">Undo</a></span>
+            </header>
+
+            <div class="body">
+                <ul>
+                    <!-- products added to the cart will be inserted here using JavaScript -->
+                </ul>
+            </div>
+
+            <footer>
+                <a href="#0" class="checkout btn"><em>Send Quotes</em></a>
+            </footer>
+        </div>
+    </div>
+    <!-- .cd-cart -->
+</div>
+<!-- cd-cart-container -->
+
+
+<div id="filters" class="button-group">  <button class="button is-checked" data-filter="*">show all</button>
+  <button class="button" data-filter=".metal">metal</button>
+  <button class="button" data-filter=".transition">transition</button>
+  <button class="button" data-filter=".alkali, .alkaline-earth">alkali and alkaline-earth</button>
+  <button class="button" data-filter=":not(.transition)">not transition</button>
+  <button class="button" data-filter=".metal:not(.transition)">metal but not transition</button>
+  <button class="button" data-filter="numberGreaterThan50">number > 50</button>
+  <button class="button" data-filter="ium">name ends with &ndash;ium</button>
+</div>
+
+<ul class="cd-items cd-container grid">
+    <li class="cd-item element-item transition metal" data-category="transition">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#cont1" class="cd-trigger">Quick View</a>
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+    <!-- cd-item -->
+
+    <li class="cd-item element-item alkali metal" data-category="alkali">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#cont2" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 2</h2>
+                   
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class=" add-to-cart cd-add-to-cart" data-price="25.99">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+
+
+    </li>
+    <!-- cd-item -->
+
+      <li class="cd-item element-item transition metal" data-category="transition">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 3</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+    <!-- cd-item -->
+
+
+
+
+
+
+
+
+
+
+    <li class="cd-item element-item transition metal" data-category="transition">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+    <!-- cd-item -->
+
+    <li class="cd-item element-item transition metal" data-category="transition">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+    <li class="cd-item element-item transition metal" data-category="transition">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+    <li class="cd-item element-item transition metal" data-category="transition">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+    <li class="cd-item element-item transition metal" data-category="transition">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+    <li class="cd-item element-item transition metal" data-category="transition">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+    <li class="cd-item element-item transition metal" data-category="transition">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+    <li class="cd-item element-item transition metal" data-category="transition">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+    <li class="cd-item element-item transition metal" data-category="transition">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+    <li class="cd-item element-item transition metal" data-category="transition">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+    <li class="cd-item element-item transition metal" data-category="transition">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+    <li class="cd-item element-item transition metal" data-category="transition">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+    <li class="cd-item element-item transition metal" data-category="transition">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+    <li class="cd-item element-item transition metal" data-category="transition">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+    <li class="cd-item element-item transition metal" data-category="transition">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+    <li class="cd-item element-item transition metal" data-category="transition">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+    <li class="cd-item element-item transition metal" data-category="transition">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+    <li class="cd-item element-item transition metal" data-category="transition">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+    <li class="cd-item element-item transition metal" data-category="transition">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+    <li class="cd-item element-item transition metal" data-category="transition">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+    <li class="cd-item element-item transition metal" data-category="transition">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+    <li class="cd-item element-item transition metal" data-category="transition">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+    <li class="cd-item element-item transition metal" data-category="transition">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+    <li class="cd-item element-item transition metal" data-category="transition">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+    <li class="cd-item element-item transition metal" data-category="transition">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+      <li class="cd-item element-item transition metal" data-category="transition">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+    <!-- cd-item -->
+
+    <li class="cd-item element-item transition metal" data-category="transition">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+    <!-- cd-item -->
+  <li class="cd-item element-item transition metal" data-category="transition">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+    <!-- cd-item -->
+
+     <li class="cd-item element-item noble-gas nonmetal " data-category="noble-gas">
+        <img src="/static/img/item-1.jpg" alt="Item Preview">
+        <a href="#" class="cd-trigger">Quick View</a>
+
+        <div class="quick-view-content">
+            <div class="quick-view-content-wrapper">
+                <div class="cd-slider-wrapper">
+                    <ul class="cd-slider">
+                        <li class="selected"><img src="/static/img/item-1.jpg" alt="Product 1"></li>
+                        <li><img src="/static/img/item-2.jpg" alt="Product 2"></li>
+                        <li><img src="/static/img/item-3.jpg" alt="Product 3"></li>
+                    </ul>
+                    <!-- cd-slider -->
+
+                    <ul class="cd-slider-navigation">
+                        <li><a class="cd-next" href="#0">Prev</a></li>
+                        <li><a class="cd-prev" href="#0">Next</a></li>
+                    </ul>
+                    <!-- cd-slider-navigation -->
+                </div>
+                <!-- cd-slider-wrapper -->
+
+                <div class="cd-item-info">
+                    <h2>Produt Title Unique 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.</p>
+
+                    <ul class="cd-item-action">
+                        <li><button class="add-to-cart">Add to cart</button></li>
+                        <li><a href="#">Learn more</a></li>
+                    </ul>
+                    <!-- cd-item-action -->
+                </div>
+                <!-- cd-item-info -->
+            </div>
+        </div>
+    </li>
+    <!-- cd-item -->
+
+</ul>
+<!-- cd-items -->
+
+<div id="cd-quick-view" class="cd-quick-view">
+    <a href="#" class="cd-close">Close</a>
+</div>
+<!-- cd-quick-view -->
+
+<div id="cd-quick-view-coverlay"></div>
